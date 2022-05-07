@@ -177,9 +177,16 @@ body.dark {
   .main-options {
     background-color: @brand-other-light;
   }
-  .options-toggle svg {
+  svg {
     filter: brightness(0);
   }
+  .smallsep {
+    background-color: @brand-other-black;
+  }
+  .divider {
+    background-color: @brand-other-black;
+  }
+
 }
 
 section {
@@ -481,7 +488,7 @@ header {
   #headline {
     font-size: 1.5rem;
     letter-spacing: 4;
-    padding: 0;
+    padding: 0 5 0 5;
   } 
 }
 
@@ -493,12 +500,12 @@ header {
   }
   .title h1 {
     font-size: 4rem;
-    letter-spacing: 2;
+    letter-spacing: 1.5;
   }
   #headline {
     font-size: 1.25rem;
-    letter-spacing: 4;
-    padding: 0;
+    letter-spacing: 3;
+    padding: 0 3 0 3;
   } 
 }
 
@@ -932,11 +939,17 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   justify-content: center;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
 #form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 500px;
+  width: auto;
   margin: 50px auto 100px auto;
 }
 
@@ -1240,8 +1253,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   position:absolute;
   color:white;
   display: inline-block;
-  /* background: rgba(59,173,227,1); */
-  // background: linear-gradient(45deg, rgba(24, 72, 141) 0%, rgb(26, 190, 255) 51%, rgb(24, 72, 141) 100%);
+
   background: linear-gradient(45deg, rgb(24, 141, 57) 0%, rgb(26, 255, 156) 51%, rgb(24, 141, 84) 100%);
   height: 50px;
   width: 372px;
@@ -1253,6 +1265,11 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .button-container:hover .baltringue{
   transform: translateX(-250px);
   
+}
+.collaborate{
+  position:relative;
+  color:white;
+  background: linear-gradient(15deg,rgb(26, 255, 156) 0%, rgb(24, 141, 84) 50%);
 }
 
 
@@ -1998,12 +2015,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
       }
     }
   }
-}
-
-.collaborate{
-  position:relative;
-  color:white;
-  background: linear-gradient(15deg,rgb(26, 255, 156) 0%, rgb(24, 141, 84) 50%);
 }
 
 
