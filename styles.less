@@ -394,14 +394,6 @@ a:hover {
   height: 120px;
 }
 
-@media only screen and (max-width: 500px), only screen and (max-device-width: 500px){
-  #headline {
-    font-size: 1.25rem;
-    padding: ;
-  } 
-}
-
-
 .arrow-down {
   z-index: 5;
   position: absolute;
@@ -454,7 +446,7 @@ header {
 	height: 2px;
 	width: 20%;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-bottom: 30px;
 }
 .title h1 {
@@ -465,6 +457,7 @@ header {
 	margin: 0;
 	padding: 0;
 	font-weight: 600;
+  letter-spacing: 3;
 }
 .title h2 {
 	font-size: 1.2em;
@@ -475,29 +468,38 @@ header {
   padding: 0 60px;
 }
 
-@media only screen and (max-height: 700px) {
-.title h1 {
-	font-size: 80px;
-}
-}
-.title p {
-	max-width: 600px;
-	margin: 0 auto;
-	line-height: 150%;
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px){
+  .title .smallsep {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .title h1 {
+    font-size: 5rem;
+    letter-spacing: 1.5;
+  }
+  #headline {
+    font-size: 1.5rem;
+    letter-spacing: 4;
+    padding: 0;
+  } 
 }
 
-@media only screen and (max-width: 500px) {
-.title h1 {
-	font-size: 3rem;
-}
-}
-.title .icon {
-	font-size: 50px;
-}
-.title .icon img{
-	width: 300px;
-	height: auto;
-	opacity: 0.5;
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px){
+  .title .smallsep {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .title h1 {
+    font-size: 4rem;
+    letter-spacing: 2;
+  }
+  #headline {
+    font-size: 1.25rem;
+    letter-spacing: 4;
+    padding: 0;
+  } 
 }
 
 
