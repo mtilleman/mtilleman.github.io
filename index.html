@@ -1,0 +1,785 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <script src="https://kit.fontawesome.com/795c83d4fb.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/css-doodle@0.26.4/css-doodle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <title>Dev</title>
+</head>
+
+
+<body id="body">
+
+<!-- Simple Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="main-simple-menu">
+  <div class="simple-menu-toggle">
+
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<g>
+	<g>
+		<rect x="25.86" y="69.04" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="175.59" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="282.15" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="388.71" class="st0" width="448.27" height="42.26"/>
+	</g>
+</g>
+</svg> -->
+
+
+<svg version="1.1" id="hotdog" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M420.86,175.05H79.14c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C438.02,167.37,430.33,175.05,420.86,175.05z"/>
+	</g>
+	<g>
+		<path class="st0" d="M478.13,274.2H21.87c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h456.26
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C495.29,266.52,487.61,274.2,478.13,274.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M420.86,373.35H79.14c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C438.02,365.67,430.33,373.35,420.86,373.35z"/>
+	</g>
+</g>
+</svg>
+
+
+
+
+  </div>
+  <div class="simple-menu">
+      <ul>
+          <li><a class="smoothscroll" href="#header">Home</a></li>
+          <li><a class="smoothscroll" href="#services">Services</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+<!--           <li><a class="smoothscroll" href="#skills">Skills</a></li>
+ -->          <li><a class="smoothscroll" href="#portfolio">Work</a></li>
+          <li class="collaborate"><a class="smoothscroll" href="#contact">Collaborate</a></li>
+
+      </ul>
+  </div>
+</div>
+</div>
+
+<!-- Setttings
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="main-options">
+  <div class="options-toggle">
+
+      
+      <svg version="1.1" id="gear" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 92.2 92.2" style="enable-background:new 0 0 92.2 92.2;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><g><path class="st0" d="M46.11,32.71c5.4,0,10.26,3.21,12.37,8.18c2.9,6.82-0.29,14.72-7.11,17.62c-1.68,0.71-3.45,1.08-5.25,1.08
+c-5.4,0-10.26-3.21-12.37-8.18c-2.9-6.82,0.29-14.72,7.11-17.62C42.54,33.07,44.31,32.71,46.11,32.71L46.11,32.71 M46.11,29.12
+c-2.22,0-4.48,0.44-6.66,1.36c-8.65,3.68-12.68,13.68-9,22.33c2.76,6.48,9.05,10.37,15.68,10.37c2.22,0,4.48-0.44,6.66-1.36
+c8.65-3.68,12.68-13.68,9-22.33C59.03,33.01,52.74,29.12,46.11,29.12L46.11,29.12z"/><path class="st0" d="M55.88,4.46l11.57,4.66l-2.28,10.67l-0.45,2.09l1.62,1.39l2.34,2.01l1.38,1.19l1.77-0.41l10.62-2.48
+l4.88,11.48l-9.16,5.93l-1.79,1.16l0.16,2.13l0.23,3.08l0.14,1.82l1.55,0.96l9.27,5.76l-4.66,11.57l-10.67-2.28l-2.09-0.45
+l-1.39,1.62l-2.01,2.34l-1.19,1.38l0.41,1.77l2.48,10.63l-11.48,4.88l-5.93-9.16l-1.16-1.79l-2.13,0.16l-3.08,0.23l-1.82,0.14
+l-0.96,1.55l-5.76,9.27l-11.57-4.66l2.28-10.67l0.45-2.09l-1.62-1.39l-2.34-2.01l-1.38-1.19l-1.77,0.41L9.74,68.63L4.86,57.15
+l9.16-5.93l1.79-1.16l-0.16-2.13l-0.23-3.08l-0.14-1.82l-1.55-0.96l-9.27-5.76l4.66-11.57l10.67,2.28l2.09,0.45l1.39-1.62
+l2.01-2.34l1.19-1.38l-0.41-1.77L23.57,9.74l11.48-4.88l5.93,9.16l1.16,1.79l2.13-0.16l3.08-0.23l1.82-0.14l0.96-1.55L55.88,4.46
+ M54.42,0l-7.35,11.83l-3.08,0.23L36.42,0.37L19.39,7.62l3.17,13.56l-2.01,2.34L6.92,20.61L0,37.78l11.83,7.35l0.23,3.08
+L0.38,55.78l7.24,17.03l13.56-3.17l2.34,2.01l-2.91,13.62l17.16,6.92l7.35-11.83l3.08-0.23l7.57,11.69l17.03-7.24l-3.17-13.56
+l2.01-2.34l13.62,2.91l6.92-17.17l-11.83-7.35l-0.23-3.08l11.69-7.57l-7.24-17.03l-13.56,3.17l-2.34-2.01l2.91-13.62L54.42,0
+L54.42,0z"/></g></g></svg>
+
+
+  </div>
+  <div class="settings">
+      <ul>
+        <div class="font-size-buttons">
+          
+          <input class="font-button plus" type="button" value="+" onclick="checkFontSize(`body`, 1)">
+          <input class="font-button minus" type="button" value="-" onclick="checkFontSize(`body`, -1)">
+
+
+          <!-- <input class="font-button plus" type="button" value="+" onclick="increaseFontSize(`body`, 1)">
+          <input class="font-button minus" type="button" value="-" onclick="increaseFontSize(`body`, -1)"> -->
+
+        </div>
+        
+            <div id="dark-mode-switch">
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+            </div>
+      </ul>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<header id="header">
+  <div class="title">
+    <div>
+      <!-- <span class="typcn typcn-heart-outline icon heading"></span> -->
+    
+    
+    </div>
+
+    <div class="smallsep heading"></div>
+    <h1 class="heading"> Mike<br>Tilleman</h1>
+    <h2 id="headline" class="heading">< Design &nbsp to &nbsp develpment ></h2>
+
+    <div class="button-container">
+      <a class="button smoothscroll" href="#contact"><span>Collaborate</span></a>
+      <span class="baltringue"></span>
+    </div>
+
+    <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      </a> </div>
+    <a class="smoothscroll" href="#services">
+    <div class="scroll-down"></div>
+    </a> </header>    
+
+    
+
+  <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    
+  <section id="services">
+    <div class="container">
+      <div class="services">
+        <!-- <h1>Services</h1>
+        <div class="block"></div> -->
+        <div class="row service-row">
+          <div class="services-3">
+            <h3>
+
+              <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="design-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:16;stroke-miterlimit:10;}
+	.st2{fill:#606060;}
+	.st3{stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path d="M-275.14,175.05h-341.71c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-257.98,167.37-265.67,175.05-275.14,175.05z"/>
+	</g>
+	<g>
+		<path d="M-217.87,274.2h-456.26c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h456.26
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-200.71,266.52-208.39,274.2-217.87,274.2z"/>
+	</g>
+	<g>
+		<path d="M-275.14,373.35h-341.71c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-257.98,365.67-265.67,373.35-275.14,373.35z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M307.71,40.12l-60.28,104.42c-20.46-8.81-42.73-13.42-65.12-13.42c-90.64,0-164.38,73.74-164.38,164.38
+			S91.66,459.88,182.3,459.88c37.42,0,74.04-12.91,103.11-36.35c26.02-20.98,45.14-49.6,54.55-81.4h142.11L307.71,40.12z
+			 M269.72,404.07c-25,20.16-55.23,30.81-87.42,30.81c-76.85,0-139.38-62.52-139.38-139.38c0-76.85,62.53-139.38,139.38-139.38
+			c18.3,0,35.91,3.43,52.53,10.23L133.34,342.13h180.34C305.09,366.24,289.84,387.85,269.72,404.07z M176.64,317.13l86.66-150.1
+			l6.52-11.3l37.88-65.61l131.07,227.01H176.64z"/>
+	</g>
+</g>
+<g>
+	<path class="st1" d="M956.9,149.25h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63,144.9,962.27,149.25,956.9,149.25z"/>
+	<path class="st1" d="M956.9,306.63h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63,302.27,962.27,306.63,956.9,306.63z"/>
+	<path class="st1" d="M956.9,464h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63,459.65,962.27,464,956.9,464z"/>
+	<polyline class="st1" points="878.38,100.21 902.65,123.93 941.62,52.5 	"/>
+</g>
+<g>
+	<g>
+		<path d="M1727.03,184.69c5.7,1.94,5.69,7.52-0.03,9.44l-43.51,14.61l-41.07,13.79l-57.51,19.3l-30.51,10.24
+			c-2.14,0.72-4.64,0.71-6.77-0.01l-32.54-11.04l-57.5-19.52l-41.08-13.94l-43.54-14.78c-5.7-1.94-5.69-7.52,0.03-9.44l172.61-57.95
+			c2.14-0.72,4.64-0.71,6.77,0.01L1727.03,184.69z"/>
+	</g>
+	<g>
+		<path d="M1727.03,244.88c5.7,1.94,5.69,7.52-0.03,9.44l-43.51,14.6l-41.07,13.79l-88.02,29.55c-2.14,0.72-4.64,0.71-6.77-0.01
+			l-90.04-30.56l-41.08-13.94l-43.54-14.78c-5.7-1.94-5.69-7.52,0.03-9.44l23.7-7.95c2.14-0.72,4.64-0.71,6.77,0.01l54.13,18.37
+			l41.07,13.94l48.97,16.62c2.13,0.72,4.63,0.73,6.77,0.01l46.94-15.76l41.08-13.79l54.11-18.17c2.14-0.72,4.64-0.71,6.77,0.01
+			L1727.03,244.88z"/>
+	</g>
+	<g>
+		<path d="M1396.69,297.92l-23.69,7.95c-5.72,1.92-5.73,7.5-0.03,9.44l174.66,59.27c2.13,0.72,4.63,0.73,6.77,0.01l172.6-57.94
+			c5.72-1.92,5.73-7.5,0.03-9.44l-23.73-8.05c-2.13-0.72-4.63-0.73-6.77-0.01l-142.13,47.71c-2.14,0.72-4.64,0.71-6.77-0.01
+			l-144.17-48.93C1401.33,297.21,1398.83,297.21,1396.69,297.92z"/>
+	</g>
+</g>
+<polygon class="st0" points="41.09,1527 -152,1527 -152,1914 153,1914 153,1623.16 "/>
+<g>
+	<g>
+		<polygon class="st2" points="-77.89,1742.74 -38.8,1771.75 -48.08,1786.84 -109.34,1742.74 -48.08,1698.64 -38.8,1713.73 		"/>
+	</g>
+	<g>
+		<polygon class="st2" points="28.08,1670.57 -11.17,1813.69 -27.08,1810.44 12.17,1667.31 		"/>
+	</g>
+	<g>
+		<polygon class="st2" points="110.34,1742.74 49.08,1786.84 39.8,1771.75 78.89,1742.74 39.8,1713.73 49.08,1698.64 		"/>
+	</g>
+</g>
+<g>
+	<rect x="137.19" y="717.88" class="st1" width="225.61" height="110.22"/>
+	<rect x="37.08" y="1036.94" class="st1" width="88.5" height="88.47"/>
+	<rect x="374.41" y="1036.94" class="st1" width="88.5" height="88.47"/>
+	<rect x="206.35" y="1036.94" class="st1" width="88.5" height="88.47"/>
+	<rect x="206.35" y="867.94" class="st1" width="88.5" height="88.47"/>
+	<line class="st1" x1="250" y1="828.1" x2="250.36" y2="864.36"/>
+	<line class="st1" x1="250.36" y1="960.8" x2="250.36" y2="1032.59"/>
+	<polyline class="st1" points="418.66,1036.94 418.66,996.13 81.34,996.13 81.34,1036.94 	"/>
+</g>
+<path class="st1" d="M1128.23,1099H689.77c-1.53,0-2.77-1.24-2.77-2.77V752.77c0-1.53,1.24-2.77,2.77-2.77h438.46
+	c1.53,0,2.77,1.24,2.77,2.77v343.46C1131,1097.76,1129.76,1099,1128.23,1099z"/>
+<path class="st1" d="M1128.23,807H689.77c-1.53,0-2.77-1.24-2.77-2.77v-51.46c0-1.53,1.24-2.77,2.77-2.77h438.46
+	c1.53,0,2.77,1.24,2.77,2.77v51.46C1131,805.76,1129.76,807,1128.23,807z"/>
+<circle cx="722.5" cy="778.5" r="12.5"/>
+<circle cx="755.5" cy="778.5" r="12.5"/>
+<circle cx="788.5" cy="778.5" r="12.5"/>
+<g>
+	<g>
+		<path class="st3" d="M898.38,926.92c10.13-4.3,21.81-2.15,29.72,5.5c10.87,10.49,11.18,27.85,0.69,38.72
+			c-2.59,2.67-5.61,4.77-8.99,6.21c-10.13,4.3-21.81,2.15-29.72-5.5c-10.87-10.49-11.18-27.85-0.69-38.72
+			C891.97,930.44,895,928.35,898.38,926.92L898.38,926.92 M895.52,920.19c-4.17,1.77-8.05,4.39-11.41,7.86
+			c-13.3,13.79-12.9,35.76,0.9,49.06c10.34,9.96,25.24,12.25,37.68,6.97c4.17-1.77,8.05-4.39,11.41-7.86
+			c13.3-13.79,12.9-35.76-0.9-49.06C922.86,917.19,907.96,914.91,895.52,920.19L895.52,920.19z"/>
+		<path class="st3" d="M894.21,866.14l25.42-0.47l4.22,21.83l0.82,4.28l4.15,1.32l5.99,1.91l3.54,1.13l2.99-2.18l17.95-13.11
+			l18.3,17.65l-12.46,18.42l-2.43,3.6l2,3.87l2.88,5.6l1.71,3.3l3.67,0.57l21.98,3.42l0.47,25.42l-21.83,4.22l-4.28,0.82l-1.32,4.15
+			l-1.91,5.99l-1.13,3.54l2.18,2.99l13.12,17.97l-17.65,18.3l-18.42-12.46l-3.6-2.43l-3.87,2l-5.6,2.88l-3.3,1.71l-0.57,3.67
+			l-3.42,21.98l-25.42,0.47l-4.22-21.83l-0.82-4.28l-4.15-1.32l-5.99-1.91l-3.54-1.13l-2.99,2.18l-17.92,13.08l-18.3-17.65
+			l12.46-18.42l2.43-3.6l-2-3.87l-2.88-5.6l-1.71-3.3l-3.67-0.57l-21.98-3.42l-0.47-25.42l21.83-4.22l4.28-0.82l1.32-4.15l1.91-5.99
+			l1.13-3.54l-2.18-2.99l-13.13-17.94l17.65-18.3l18.42,12.46l3.6,2.43l3.87-2l5.6-2.88l3.3-1.71l0.57-3.67L894.21,866.14
+			 M887.92,858.93l-4.37,28.05l-5.6,2.88l-23.51-15.9l-26.18,27.16l16.75,22.92l-1.91,5.99l-27.89,5.4l0.69,37.72l28.05,4.37
+			l2.88,5.6l-15.88,23.5l27.15,26.19l22.92-16.75l5.99,1.91l5.39,27.87l37.71-0.68l4.37-28.05l5.6-2.88l23.51,15.9l26.19-27.15
+			l-16.75-22.92l1.91-5.99l27.87-5.39l-0.69-37.72l-28.05-4.37l-2.88-5.6l15.9-23.51l-27.15-26.19l-22.92,16.75l-5.99-1.91
+			l-5.39-27.87L887.92,858.93L887.92,858.93z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 1319.0146 1041.3584)"><tspan x="0" y="0" style="font-family:'MrEavesXLModNarOT-Reg'; font-size:370px;">&lt;</tspan><tspan x="128.76" y="-39" style="font-family:'MrEavesXLModNarOT-Reg'; font-size:278.61px;">ode</tspan></text>
+</svg>
+
+
+
+
+            </span>Design</h3>
+            <p>The fun part, taking your ideas and make them look and work amazingly!</p>
+          </div>
+          <!-- <div class="services-3">
+            <h3><span class="typcn typcn-pen icon"></span>Brand Design</h3>
+            <p>Create a brand that speaks to you. From fonts, colors to space - Design matters!</p>
+          </div> -->
+          <div class="services-3">
+            <div class="divider"></div>
+          </div>
+          <div class="services-3">
+            <h3>
+
+
+
+<svg version="1.1" id="develope-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st2{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path d="M-275.14-498.95h-341.71c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-257.98-506.63-265.67-498.95-275.14-498.95z"/>
+	</g>
+	<g>
+		<path d="M-217.87-399.8h-456.26c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h456.26
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-200.71-407.48-208.39-399.8-217.87-399.8z"/>
+	</g>
+	<g>
+		<path d="M-275.14-300.65h-341.71c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C-257.98-308.33-265.67-300.65-275.14-300.65z"/>
+	</g>
+</g>
+<g>
+	<path class="st0" d="M481.28,1186.38H328.57l76.36-132.26l21.13-36.6c-20.99-10.96-44.86-17.16-70.17-17.16
+		c-83.88,0-151.88,68-151.88,151.88c0,83.88,68,151.88,151.88,151.88c72.15,0,132.54-50.3,148.03-117.75H481.28z"/>
+	<path class="st0" d="M503.91,1186.38H634l-76.36-132.26l-76.36-132.26l-55.23,95.66"/>
+	<path class="st0" d="M426.05,1017.53l-21.13,36.6l-76.36,132.26h152.72h22.63"/>
+</g>
+<g>
+	<path class="st1" d="M956.9-524.75h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63-529.1,962.27-524.75,956.9-524.75z"/>
+	<path class="st1" d="M956.9-367.37h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63-371.73,962.27-367.37,956.9-367.37z"/>
+	<path class="st1" d="M956.9-210h-93.8c-5.37,0-9.73-4.35-9.73-9.73v-93.8c0-5.37,4.35-9.73,9.73-9.73h93.8
+		c5.37,0,9.73,4.35,9.73,9.73v93.8C966.63-214.35,962.27-210,956.9-210z"/>
+	<polyline class="st1" points="878.38,-573.79 902.65,-550.07 941.62,-621.5 	"/>
+</g>
+<g>
+	<g>
+		<path d="M1727.03-489.31c5.7,1.94,5.69,7.52-0.03,9.44l-43.51,14.61l-41.07,13.79l-57.51,19.3l-30.51,10.24
+			c-2.14,0.72-4.64,0.71-6.77-0.01l-32.54-11.04l-57.5-19.52l-41.08-13.94l-43.54-14.78c-5.7-1.94-5.69-7.52,0.03-9.44l172.61-57.95
+			c2.14-0.72,4.64-0.71,6.77,0.01L1727.03-489.31z"/>
+	</g>
+	<g>
+		<path d="M1727.03-429.12c5.7,1.94,5.69,7.52-0.03,9.44l-43.51,14.6l-41.07,13.79l-88.02,29.55c-2.14,0.72-4.64,0.71-6.77-0.01
+			l-90.04-30.56l-41.08-13.94l-43.54-14.78c-5.7-1.94-5.69-7.52,0.03-9.44l23.7-7.95c2.14-0.72,4.64-0.71,6.77,0.01l54.13,18.37
+			l41.07,13.94l48.97,16.62c2.13,0.72,4.63,0.73,6.77,0.01l46.94-15.76l41.08-13.79l54.11-18.17c2.14-0.72,4.64-0.71,6.77,0.01
+			L1727.03-429.12z"/>
+	</g>
+	<g>
+		<path d="M1396.69-376.08l-23.69,7.95c-5.72,1.92-5.73,7.5-0.03,9.44l174.66,59.27c2.13,0.72,4.63,0.73,6.77,0.01l172.6-57.94
+			c5.72-1.92,5.73-7.5,0.03-9.44l-23.73-8.05c-2.13-0.72-4.63-0.73-6.77-0.01l-142.13,47.71c-2.14,0.72-4.64,0.71-6.77-0.01
+			l-144.17-48.93C1401.33-376.79,1398.83-376.79,1396.69-376.08z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="-405.41,56.5 -598.5,56.5 -598.5,443.5 -293.5,443.5 -293.5,152.66 		"/>
+	</g>
+	<g>
+		<g>
+			<polygon class="st2" points="-524.39,272.24 -485.3,301.25 -494.58,316.34 -555.84,272.24 -494.58,228.14 -485.3,243.23 			"/>
+		</g>
+		<g>
+			<polygon class="st2" points="-418.42,200.07 -457.67,343.19 -473.58,339.94 -434.33,196.81 			"/>
+		</g>
+		<g>
+			<polygon class="st2" points="-336.16,272.24 -397.42,316.34 -406.7,301.25 -367.61,272.24 -406.7,243.23 -397.42,228.14 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st2" d="M429.17,354.79v-40.81H260.86v-18.72h44.49V185.8h-44.56l-0.18-18.84h112.7V35.74H126.69v131.22H239.6
+			l0.19,18.84h-43.94v109.47h44.01v18.72H70.83v40.81H26.58v109.47h109.51V354.79H91.83v-19.81h148.03v19.81h-44.01v109.47h109.5
+			V354.79h-44.49v-19.81h147.31v19.81h-44.26v109.47h109.51V354.79H429.17z M115.09,375.79v67.47H47.58v-67.47H115.09z
+			 M147.69,145.96V56.74h204.62v89.22H147.69z M284.35,375.79v67.47h-67.5v-67.47H284.35z M216.85,274.27V206.8h67.5v67.47H216.85z
+			 M452.42,443.26h-67.51v-67.47h67.51V443.26z"/>
+	</g>
+</g>
+<g>
+	<rect x="1062.19" y="866.88" class="st3" width="225.61" height="110.22"/>
+	<rect x="962.08" y="1185.94" class="st3" width="88.5" height="88.47"/>
+	<rect x="1299.41" y="1185.94" class="st3" width="88.5" height="88.47"/>
+	<rect x="1131.35" y="1185.94" class="st3" width="88.5" height="88.47"/>
+	<rect x="1131.35" y="1016.94" class="st3" width="88.5" height="88.47"/>
+	<line class="st3" x1="1175" y1="977.1" x2="1175.36" y2="1013.36"/>
+	<line class="st3" x1="1175.36" y1="1109.8" x2="1175.36" y2="1181.59"/>
+	<polyline class="st3" points="1343.66,1185.94 1343.66,1145.13 1006.34,1145.13 1006.34,1185.94 	"/>
+</g>
+<path class="st1" d="M1128.23,425H689.77c-1.53,0-2.77-1.24-2.77-2.77V78.77c0-1.53,1.24-2.77,2.77-2.77h438.46
+	c1.53,0,2.77,1.24,2.77,2.77v343.46C1131,423.76,1129.76,425,1128.23,425z"/>
+<path class="st1" d="M1128.23,133H689.77c-1.53,0-2.77-1.24-2.77-2.77V78.77c0-1.53,1.24-2.77,2.77-2.77h438.46
+	c1.53,0,2.77,1.24,2.77,2.77v51.46C1131,131.76,1129.76,133,1128.23,133z"/>
+<circle cx="722.5" cy="104.5" r="12.5"/>
+<circle cx="755.5" cy="104.5" r="12.5"/>
+<circle cx="788.5" cy="104.5" r="12.5"/>
+<g>
+	<g>
+		<path class="st4" d="M898.38,252.92c10.13-4.3,21.81-2.15,29.72,5.5c10.87,10.49,11.18,27.85,0.69,38.72
+			c-2.59,2.67-5.61,4.77-8.99,6.21c-10.13,4.3-21.81,2.15-29.72-5.5c-10.87-10.49-11.18-27.85-0.69-38.72
+			C891.97,256.44,895,254.35,898.38,252.92L898.38,252.92 M895.52,246.19c-4.17,1.77-8.05,4.39-11.41,7.86
+			c-13.3,13.79-12.9,35.76,0.9,49.06c10.34,9.96,25.24,12.25,37.68,6.97c4.17-1.77,8.05-4.39,11.41-7.86
+			c13.3-13.79,12.9-35.76-0.9-49.06C922.86,243.19,907.96,240.91,895.52,246.19L895.52,246.19z"/>
+		<path class="st4" d="M894.21,192.14l25.42-0.47l4.22,21.83l0.82,4.28l4.15,1.32l5.99,1.91l3.54,1.13l2.99-2.18l17.95-13.11
+			l18.3,17.65l-12.46,18.42l-2.43,3.6l2,3.87l2.88,5.6l1.71,3.3l3.67,0.57l21.98,3.42l0.47,25.42l-21.83,4.22l-4.28,0.82l-1.32,4.15
+			l-1.91,5.99l-1.13,3.54l2.18,2.99l13.12,17.97l-17.65,18.3l-18.42-12.46l-3.6-2.43l-3.87,2l-5.6,2.88l-3.3,1.71l-0.57,3.67
+			l-3.42,21.98l-25.42,0.47l-4.22-21.83l-0.82-4.28l-4.15-1.32l-5.99-1.91l-3.54-1.13l-2.99,2.18l-17.92,13.08l-18.3-17.65
+			l12.46-18.42l2.43-3.6l-2-3.87l-2.88-5.6l-1.71-3.3l-3.67-0.57l-21.98-3.42l-0.47-25.42l21.83-4.22l4.28-0.82l1.32-4.15l1.91-5.99
+			l1.13-3.54l-2.18-2.99l-13.13-17.94l17.65-18.3l18.42,12.46l3.6,2.43l3.87-2l5.6-2.88l3.3-1.71l0.57-3.67L894.21,192.14
+			 M887.92,184.93l-4.37,28.05l-5.6,2.88l-23.51-15.9l-26.18,27.16l16.75,22.92l-1.91,5.99l-27.89,5.4l0.69,37.72l28.05,4.37
+			l2.88,5.6l-15.88,23.5l27.15,26.19l22.92-16.75l5.99,1.91l5.39,27.87l37.71-0.68l4.37-28.05l5.6-2.88l23.51,15.9l26.19-27.15
+			l-16.75-22.92l1.91-5.99l27.87-5.39l-0.69-37.72l-28.05-4.37l-2.88-5.6l15.9-23.51l-27.15-26.19l-22.92,16.75l-5.99-1.91
+			l-5.39-27.87L887.92,184.93L887.92,184.93z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 1319.0146 367.3584)"><tspan x="0" y="0" style="font-family:'MrEavesXLModNarOT-Reg'; font-size:370px;">&lt;</tspan><tspan x="128.76" y="-39" style="font-family:'MrEavesXLModNarOT-Reg'; font-size:278.61px;">ode</tspan></text>
+<g>
+	<g>
+		<g>
+			<path d="M307.71-633.88l-60.28,104.42c-20.46-8.81-42.73-13.42-65.12-13.42c-90.64,0-164.38,73.74-164.38,164.38
+				S91.66-214.12,182.3-214.12c37.42,0,74.04-12.91,103.11-36.35c26.02-20.98,45.14-49.6,54.55-81.4h142.11L307.71-633.88z
+				 M269.72-269.93c-25,20.16-55.23,30.81-87.42,30.81c-76.85,0-139.38-62.52-139.38-139.38c0-76.85,62.53-139.38,139.38-139.38
+				c18.3,0,35.91,3.43,52.53,10.23L133.34-331.87h180.34C305.09-307.76,289.84-286.15,269.72-269.93z M176.64-356.87l86.66-150.1
+				l6.52-11.3l37.88-65.61l131.07,227.01H176.64z"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+
+
+
+            </span>Development</h3>
+            <p>Need help scaling? Curious about previous work developers have done for you? Lets figure out what works for you. If I can't do the job or find right tools, I'll get you in touch with someone who can.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+
+
+   <!-- Team Section –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="about">
+
+    <div class="container">
+      <div class="row">
+        <div class="four columns the-dev">
+
+<div id="dev-hat">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+
+	.st2{fill:#FFFFFF;}
+
+</style>
+<g id="svg-layer">
+	<g>
+		<g>
+			<path class="st2" d="M470.68,234.8c-2.58-22.71-10.93-43.26-24.17-59.4c-21.07-25.71-45.44-45.6-71.42-58.63
+				c-0.16-1.15-0.43-2.32-0.84-3.51c-1.51-4.34-5.38-9.96-15.24-12.16c-5.55-1.23-11.09,0.26-15.13,3.56
+				c-7.85-2.19-15.79-3.75-23.75-4.67c-34.77-4.03-73.92,4.58-107.41,23.64c-43.7,24.86-59.32,68.82-74.42,111.34l-1.66,4.67
+				c-6.27,11.14-30.43,26.2-51.69,38.66c-0.04,0.02-0.06,0.04-0.09,0.05c-3.38,1.98-6.7,3.9-9.84,5.73
+				c-29.69,17.22-44.07,25.93-46.27,35.69c-0.46,2.03-0.38,4.08,0.19,5.97c0,0.01,0,0.01,0,0.01c0.22,8.1,5.4,15.89,13.21,19.52
+				c18.15,8.42,36.92-7.14,46.18-16.09c18.05,5.79,31.76,16.94,46.14,28.65c23.35,19,49.83,40.54,99.26,42.99
+				c2.2,0.11,4.36,0.16,6.5,0.16c59.7,0,102.41-40.98,128.29-65.8c4.12-3.95,7.85-7.54,10.99-10.28c6.81,1.66,13.17,2.91,19,3.7
+				c1.32,0.18,3.49,0.56,6.02,1c11.33,1.96,19.32,3.11,25.03,3.11c2.62,0,4.76-0.25,6.51-0.76c11.7-3.45,22.68-18.43,29.35-40.08
+				C470.96,273.92,472.82,253.66,470.68,234.8z M220.86,137.94c30.52-17.37,66.02-25.24,97.38-21.6
+				c14.38,1.66,28.67,5.69,42.56,11.87v0.04c-0.53-0.05-0.81-0.12-0.91-0.16c0.53,0.25,6.49,3.3,10.66,21.73
+				c12.08,53.56-14.83,129.12-22.18,148.21c-28.67-10.53-60.86-25.79-90.51-43.35c-33.17-19.64-61.98-24.62-82.69-24.62
+				c-7.02,0-13.1,0.58-18.11,1.34C170.26,194.67,185.4,158.11,220.86,137.94z M149.68,249.84c4.16-1.22,13.47-3.35,26.43-3.26
+				c29.97,0.27,56.44,12.26,73.35,22.27c20.87,12.36,43.05,23.64,64.54,33.03c-4.7,3.34-10.54,7.29-16.94,11.24
+				c-20.43,12.62-37.26,19.45-48.67,19.75c-38.44,1.02-57.74-12.38-78.21-26.54c-15.74-10.9-31.89-22.07-56.2-26.37
+				C129.7,269.97,143.04,259.87,149.68,249.84z M49.08,330.33c-2.21-1.02-3.86-3.46-3.68-5.42c0.16-1.65,0.63-1.98,0.84-2.12
+				c1.13-0.81,3.06-1.13,5.38-1.13c5.09,0,12.11,1.52,17,2.7C61.68,329.55,54.48,332.85,49.08,330.33z M357.12,323.3
+				c-24.9,23.88-66.54,63.89-122.58,61.07c-44.04-2.18-67.25-21.06-89.69-39.32c-17.82-14.49-36.24-29.48-63.68-34.63
+				c-1.42-0.27-3.42-0.76-5.74-1.34c-2.34-0.59-4.86-1.21-7.46-1.78c5.16-3.09,10.51-6.19,15.3-8.97c2.13-1.23,4.26-2.48,6.39-3.71
+				c33.8-0.57,51.96,11.99,71.14,25.26c20.03,13.86,42.64,29.51,83.69,29.51c1.41,0,2.85-0.02,4.31-0.05
+				c28.69-0.74,69.74-30.03,82.96-40.05c10.08,3.98,19.86,7.47,29.13,10.38C359.7,320.82,358.44,322.04,357.12,323.3z
+				 M449.69,287.01c-5.92,19.18-14.16,27.93-18.18,29.11c-3.6,0.8-18.55-1.78-24.18-2.75c-2.79-0.48-5-0.86-6.61-1.08
+				c-10.55-1.43-23.07-4.49-36.77-8.87c3.39-8.79,10.09-27.29,15.89-50.23c10.84-42.84,13.12-78.84,6.77-106.98
+				c-0.35-1.55-0.72-3.03-1.11-4.45c17.31,11.35,33.62,26.18,48.29,44.08C459.05,216.67,458.14,259.61,449.69,287.01z"/>
+		</g>
+		<g>
+			<path class="st2" d="M84.96,278.3c-0.04,0.02-0.06,0.04-0.09,0.05v-0.05H84.96z"/>
+		</g>
+	</g>
+	<g>
+		<path class="st5" d="M405.76,787.54c-10.16,10.31-28.44,26.79-44.09,19.52c-5.65-2.63-9.78-8.74-9.18-14.95
+			c1.95-20.36,34.82-8.31,46.4-6.14c64.11,12.02,78.77,76.53,168.89,81c81.22,4.03,135.03-67.87,157.9-84.8"/>
+		<path class="st5" d="M352.48,792.13c-9.54-13.96,100.26-56.81,116.95-88.73c0,0,50.57-20.38,119.68,20.54
+			c57.94,34.3,121.64,59.01,159.57,64.14c7.12,0.96,30.56,5.92,37.32,3.94c26-7.65,54-99.43,7-156.8
+			c-32.6-39.79-78.54-72.98-132.24-79.21c-38.13-4.43-79.13,6.05-111.94,24.72c-46.8,26.62-62.76,76.07-79.38,122.67"/>
+		<path class="st5" d="M699,772c0,0,42.66-101.58,26.68-172.42C719,570,707,569,707,569"/>
+		<path class="st5" d="M405,751c86.03-3.97,89,62,178.6,59.67c34.45-0.89,89.91-45.38,89.91-45.38"/>
+		<path class="st5" d="M712.4,573.93c1.19-5.34,2.33-14.1-10.05-16.86c-5.56-1.24-11.02,2.09-12.21,7.43"/>
+	</g>
+</g>
+</svg>
+</div>
+
+
+
+
+          <h1>The Dev</h1>
+          <p>I've been making cool shit for a while now. Want me to make some cool shit for you?</p>
+        </div>
+        <div class="four columns profile">
+          <img src="/img/portrait.jpg" class="portrait"/>
+        </div>
+        <div class="four columns team-title">
+          <div class="skill-columns-bar">
+            <h3>The Stack</h3>
+            <div class="progressBar">
+              <h4>HTML5 / CSS3</h4>
+              <div class="progressBarContainer">
+                <div class="progressBarValue value-90"></div>
+              </div>
+            </div>
+            <div class="progressBar">
+              <h4>SASS / Tailwinds / Material UI</h4>
+              <div class="progressBarContainer">
+                <div class="progressBarValue value-80"></div>
+              </div>
+            </div>
+            <div class="progressBar">
+              <h4>Javascript / Jquery / TypeScript</h4>
+              <div class="progressBarContainer">
+                <div class="progressBarValue value-30"></div>
+              </div>
+            </div>
+            <div class="progressBar">
+              <h4>React / Wordpress</h4>
+              <div class="progressBarContainer">
+                <div class="progressBarValue value-70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- MORE Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    
+ 
+    <div class="container">
+           
+      <div class="row">
+        <br><br>
+        <h3><span class="typcn typcn-pen icon"></span>Mission</h3>
+        <p>Make cool shit.</p>
+      </div>
+      <div class="row">
+        <div class="process four columns">
+          <h3><span class="typcn typcn-device-desktop icon"></span>Process</h3>
+          <p>Lets brainstorm - What's most important and how do we make that the focus?</p>
+        </div>
+        <div class="approach four columns">
+          <h3><span class="typcn typcn-pen icon"></span>Approach</h3>
+          <p>Simplicity, elegance, hard work and coffee!</p>
+        </div>
+        <div class="execution four columns">
+          <h3><span class="typcn typcn-pen icon"></span>Execution</h3>
+          <p>Delopment is as important as the creation its self. It should work awesome everytime! </p>
+        </div>
+      </div>
+      <div class="row outcome">
+        <h3><span class="typcn typcn-pen icon"></span>Outcome</h3>
+        <p><br>Satisfied clients.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+    
+  
+  <!-- Skills Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  
+  <section id="skills">
+    <div class="container">
+      <h1>Skills</h1>
+      <div class="block"></div>
+
+      <div class="skill-row">
+        <div class="skill-columns-text">
+          <h3>Design</h3>
+          <p>From wireframing to pixel perfect mockups, design matter and will set you apart in your evergrowing industry. Lets work together to create a great user experience.</p>
+          <br>
+        </div>
+
+        <div class="skill-columns-bar">
+          <div class="progressBar">
+            <h4>HTML5 / CSS3</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-90"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>SASS / Tailwinds / Material UI</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-80"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Javascript / Jquery</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-30"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>React / Wordpress</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-70"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    -->  
+
+    </div>
+  </section>
+
+  <!-- Curve Aread -->
+<!--   <section id="top-curve-section">
+      <svg class="top-curve" viewBox="0 0 1400 50"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0c309.151 33.333 542.484 50 700 50 157.516 0 390.849-16.667 700-50v50H0V0z" /></svg> -->
+      <div class="curve-below"><br></div>
+  </section>
+  
+  <!-- Portfolio Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row work-images">
+
+        <div class=" overlay-image _bp "><a href="LINK_URL">
+          <img class=" image _bq " src="/img/layout-img.jpg" alt="Alt text" />
+          <div class=" normal _bs ">
+           <div class=" text _q "></div>
+          </div>
+          <div class=" hover _br ">
+           <img class=" image _bq " src="/img/layout-img.jpg" alt="Alt text hover" />
+           <div class=" text _q ">Mockups</div>
+          </div>
+         </a></div>
+
+
+        <!-- <div><a href="/work.html"> <img src="https://images.pexels.com/photos/2365465/pexels-photo-2365465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="portfolio-img1" class="image" alt="Work One"/>
+        <p>Mockups</p>
+        </a></div> -->
+
+        <div> <img src="https://images.pexels.com/photos/2365465/pexels-photo-2365465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  id="portfolio-img2" class="image" alt="Work Two"/>
+        <p>Projects</p>
+        </div>
+        <!-- <div><img src="ç" id="portfolio-img3" class="image" alt="Work Three"/>
+        <p>Snippits</p>
+        </div> -->
+
+        <div class=" overlay-image _bp "><a href="/work.html">
+          <img class=" image _bq " src="/img/code-img.jpg" alt="Alt text" />
+          <div class=" normal _bs ">
+           <div class=" text _q "></div>
+          </div>
+          <div class=" hover _br ">
+           <img class=" image _bq " src="/img/code-img.jpg" alt="Alt text hover" />
+           <div class=" text _q ">Snippits</div>
+          </div>
+         </a></div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="testimonial">
+    <div class="container">
+      <div class="quoteLoop">
+        <blockquote class="quote">
+          <h5>&nbsp;<br>
+            &rdquo; Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort &rdquo;<br><br>
+            <small><i>– Paul J. Meyer</i></small></h5>
+        </blockquote>
+        <blockquote class="quote">
+          <h5>&nbsp;<br>
+            &ldquo; Amateurs sit and wait for inspiration, the rest of us just get up and go to work &rdquo;<br><br>
+            <small><i>– Stephen King</i></small></h5>
+        </blockquote>
+        <blockquote class="quote">
+          <h5>&nbsp;<br>
+            &ldquo; Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do &rdquo;<br><br>
+            <small><i>– Steve Jobs</i></small></h5>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Contact Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="contact">
+    <div class="container">
+      <!-- <h1>Collaborate</h1>
+      <div class="block"></div> -->
+      <p>Available for indpendent projects or collaborations. Are we right fit? (puzzle peice)</p>
+      <form id="form" class="topBefore">
+		
+        <input id="name" type="text" placeholder="NAME">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+       <!-- <input id="submit" type="submit" value="SEND"> -->
+      </form>
+      <div class="planeContainer">
+        <button class="buttonPlane">
+          <span class="default">Send</span>
+          <span class="success">Sent</span>
+          <div class="left"></div>
+          <div class="right"></div>
+        </button>
+      </div>
+    </div>
+
+
+
+  </section>
+
+ 
+  
+  <!-- Footer Section –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+  <footer>
+    <div>
+      <p>&reg; Mike | <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
+    </div>
+    <div id="dog-treat">
+      <button id="two" class="button">Buy my dog a treat</button>
+  </div>
+  
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal">
+          <h2>This is Mia</h2>
+          <p>
+            She's my 3 year old mini-aussie. If you make a donation it will go towards a treat just for her. Additionally, I'll send you a video of her doing a trick for you!
+          </p>
+          <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                  </svg>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  
+</body>
+
+
+<script src="script.js"></script>
+
+
+
+</html>
