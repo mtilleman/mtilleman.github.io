@@ -171,6 +171,12 @@ body.dark {
   .simple-menu-toggle svg {
     filter: brightness(0);
   }
+  .main-simple-menu {
+    background-color: @brand-other-light;
+  }
+  .main-options {
+    background-color: @brand-other-light;
+  }
   .options-toggle svg {
     filter: brightness(0);
   }
@@ -1852,7 +1858,17 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 /*----------------------------------------------------*/
 /* Settings
 ------------------------------------------------------ */
-
+.main-options {
+  z-index: 99;
+  display: block;
+  position: fixed;
+  bottom: 10;
+  left: 0;
+  width: 60px;
+  height: 50px;
+  background-color: @brand-other-black;
+  border-radius: 0 50px 50px 0;
+}
 
 .options-toggle svg {
   z-index: 100;
@@ -1905,6 +1921,18 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 /*----------------------------------------------------*/
 /* Simple Menu
 ------------------------------------------------------ */
+
+.main-simple-menu {
+  z-index: 99;
+  display: block;
+  position: fixed;
+  top: 5.75;
+  right: 0;
+  width: 65px;
+  height: 38px;
+  background-color: @brand-other-black;
+  border-radius: 50px 0 0 50px;
+}
 
 .simple-menu-toggle svg {
   z-index: 100;
