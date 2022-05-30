@@ -187,12 +187,51 @@ body.dark {
   .divider {
     background-color: @brand-other-black;
   }
+  .tutorials{
+    border: @brand-other-black solid 3px;
+    a {
+      color: @brand-other-black;
+    }
+  }
+
+
+
+
+  input {
+    background: @brand-other-black;
+    outline: none;
+    color: @brand-other-light;
+    
+    border: @brand-other-light solid 3px;
+    border-bottom: none;
+    
+  }
+  
+  input:hover {
+    background: @brand-dark;
+  
+  }
+  
+  textarea {
+    margin: -15px 0px 15px 0px;
+    padding: 15px;
+    
+    background: @brand-other-black;
+    outline: none;
+    
+    color: @brand-other-light;
+    
+    border: @brand-other-light solid 3px;
+  }
+  
+  textarea:hover {
+    background: @brand-dark;
+  }
+  
 
 }
 
-section {
-  /* border-bottom: 2px solid; */
-}
+
 /* Grid
 ********************************************************************* */  
 .container {
@@ -886,10 +925,12 @@ opacity: 0;
 
 
 .tutorials{
-  margin: 0;
+  margin: 10px 60px;
+  padding: 30px 60px;
+  border: @brand-other-light solid 3px;
   svg {
-    margin: 0;
-    width: 120px;
+    margin: 0 0 10px 0;
+    width: 100px;
     height: auto;
   }
   h4 {
