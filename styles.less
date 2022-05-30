@@ -1053,7 +1053,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
+  width: 100%;
   margin: 50px auto 100px auto;
 }
 
@@ -1083,13 +1083,12 @@ input {
 }
 
 input:hover {
-  background: @brand-other-light;
-  color: @brand-black;
+  background: @brand-dark;
+
 }
 
 textarea {
-  min-width: 300px;
-  max-width: 500px;
+  width: auto;
   height: 110px;
   max-height: 110px;
   margin: -15px 0px 0px 0px;
@@ -1099,7 +1098,7 @@ textarea {
   outline: none;
   
   color: @brand-other-light;
-  font-family: 'Lato', sans-serif;
+
   font-size: 0.875em;
   
   border: solid 3px;
@@ -1111,36 +1110,9 @@ textarea {
 }
 
 textarea:hover {
-  background: @brand-other-light;
-  color: @brand-black;
+  background: @brand-dark;
 }
 
-#submit {
-  width: 470px;
-  
-  padding: 0;
-  margin: 20px 0px 0px 0px;
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  color: #b3aca7;
-  
-  outline:none;
-  cursor: pointer;
-  
-  /* border: solid 3px ;
-  border-top: none; */
-
-  border: none;
-
-  position:relative;
-  color:white;
-  background: linear-gradient(15deg,rgb(26, 255, 156) 0%, rgb(24, 141, 84) 50%);
-}
-
-#submit:hover {
-  color: #e2dedb;
-}
 
 /* Footer Section
 ********************************************************************************************************************* */
@@ -2008,12 +1980,13 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 }
 
 .settings {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
 
 .open-options {
   z-index: 1;
-  opacity: 1;
+  display: block;
   bottom: 90;
   left: 15;
   transition: 500ms;
@@ -2075,7 +2048,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .simple-menu {
   display: block;
   position: fixed;
-  opacity: 0;
+  display: none;
 }
 
 .open-simple-menu {
@@ -2086,7 +2059,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   top: 48;
   right: -20;
   transition: 500ms;
-  opacity: 1;
   transform: translateX(-20px);
   ul {
     padding: 0;
