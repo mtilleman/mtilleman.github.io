@@ -571,6 +571,29 @@ opacity: 0;
   margin: 10px;
   padding: 10px;
 }
+
+@media only screen and (max-width: 1200px), only screen and (max-device-width: 1200px){
+  .services-3 {
+    width: 250px;
+    margin: 2px;
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 952px), only screen and (max-device-width: 952px){
+  .services-3 {
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 765px), only screen and (max-device-width: 765px){
+  .services-3 {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
 .divider {
   width: 3px;
   height: 250px;
@@ -604,12 +627,21 @@ opacity: 0;
   }
 } */
 .the-dev {
-  margin-top: 60px;
+  width: 300px;
+  margin-top: 50px;
   padding: 10;
-  text-align: left;
 }
 #dev-hat {
-  width: 90;
+  width: 75px;
+  transform: translate(65px, 5px);
+}
+.the-dev > h2 {
+  width: 80%;
+  text-align: center;
+}
+.the-dev > p {
+  width: 80%;
+  text-align: center;
 }
 .profile {
   display: flex;
@@ -619,18 +651,41 @@ opacity: 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto 30px;
 }
+
+
 .portrait {
   width: 400;
   height: auto;
   margin: 5;
   border-radius: 500px;
+  padding: 10px;
+}
+
+.team-title {
+  margin-top: 60px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px){
   .portrait {
   width: 350px;
   height: auto;
+  }
+  .team-title {
+    margin-top: 10px;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 590px), only screen and (max-device-width: 590px){
+  .portrait {
+  width: 310px;
+  height: auto;
+  }
+  .team-title {
+    margin-top: 60px;
+    text-align: right;
   }
 }
 
@@ -639,19 +694,22 @@ opacity: 0;
   width: 300px;
   height: auto;
   }
+  .team-title {
+    margin-top: 60px;
+    text-align: right;
+  }
 }
 
-.team-title {
-  margin-top: 60px;
-  text-align: right;
-}
 
 
 
 /* Skills Section
 ********************************************************************* */
 #skills {
-	padding: 100px 0 200px;
+	display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .skill-row {
@@ -662,22 +720,19 @@ opacity: 0;
 }
 .skill-columns-text {
   width: 300px;
-  align-items: center;
-  align-self: center;
 }
 
-/* .skill-columns-bar {
-  width: 550px;
-} */
 
 .skill-columns-bar {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+
 }
 
 
 .progressBar {
 	margin-bottom: 26px;
-	margin-bottom: 1.66em;
 }
 .progressBar h4 {
 	font-size: 16px;
@@ -1160,8 +1215,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   margin:0;
   padding:0;
   border: 0 none;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+  border: 2px solid;
   border-radius: 0;
 
   h3 {
@@ -1200,8 +1254,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   margin:0;
   padding:0;
   border: 0 none;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+  border: 2px solid;
   border-radius: 0;
 
   h3 {
