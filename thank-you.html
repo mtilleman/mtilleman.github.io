@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <script src="https://kit.fontawesome.com/795c83d4fb.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/css-doodle@0.26.4/css-doodle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <title>Tutorials</title>
+</head>
+
+
+<body id="body">
+
+<!-- Simple Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="main-simple-menu">
+  <div class="simple-menu-toggle">
+
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<g>
+	<g>
+		<rect x="25.86" y="69.04" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="175.59" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="282.15" class="st0" width="448.27" height="42.26"/>
+	</g>
+	<g>
+		<rect x="25.86" y="388.71" class="st0" width="448.27" height="42.26"/>
+	</g>
+</g>
+</svg> -->
+
+
+<svg version="1.1" id="hotdog" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M420.86,175.05H79.14c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C438.02,167.37,430.33,175.05,420.86,175.05z"/>
+	</g>
+	<g>
+		<path class="st0" d="M478.13,274.2H21.87c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h456.26
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C495.29,266.52,487.61,274.2,478.13,274.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M420.86,373.35H79.14c-9.48,0-17.16-7.68-17.16-17.16v-14.08c0-9.48,7.68-17.16,17.16-17.16h341.71
+			c9.48,0,17.16,7.68,17.16,17.16v14.08C438.02,365.67,430.33,373.35,420.86,373.35z"/>
+	</g>
+</g>
+</svg>
+
+
+
+
+  </div>
+  <div class="simple-menu">
+    <ul>
+      <li><a class="smoothscroll" href="/index.html#header">Home</a></li>
+      <li><a class="smoothscroll" href="/index.html#services">Services</a></li>
+      <li><a class="smoothscroll" href="/index.html#about">About</a></li>
+      <li><a class="smoothscroll" href="/index.html#portfolio">Work</a></li>
+      <li class="collaborate"><a class="smoothscroll" href="/index.html#contact">Collaborate</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Setttings
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="main-options">
+  <div class="options-toggle">
+
+      
+      <svg version="1.1" id="gear" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 92.2 92.2" style="enable-background:new 0 0 92.2 92.2;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><g><path class="st0" d="M46.11,32.71c5.4,0,10.26,3.21,12.37,8.18c2.9,6.82-0.29,14.72-7.11,17.62c-1.68,0.71-3.45,1.08-5.25,1.08
+c-5.4,0-10.26-3.21-12.37-8.18c-2.9-6.82,0.29-14.72,7.11-17.62C42.54,33.07,44.31,32.71,46.11,32.71L46.11,32.71 M46.11,29.12
+c-2.22,0-4.48,0.44-6.66,1.36c-8.65,3.68-12.68,13.68-9,22.33c2.76,6.48,9.05,10.37,15.68,10.37c2.22,0,4.48-0.44,6.66-1.36
+c8.65-3.68,12.68-13.68,9-22.33C59.03,33.01,52.74,29.12,46.11,29.12L46.11,29.12z"/><path class="st0" d="M55.88,4.46l11.57,4.66l-2.28,10.67l-0.45,2.09l1.62,1.39l2.34,2.01l1.38,1.19l1.77-0.41l10.62-2.48
+l4.88,11.48l-9.16,5.93l-1.79,1.16l0.16,2.13l0.23,3.08l0.14,1.82l1.55,0.96l9.27,5.76l-4.66,11.57l-10.67-2.28l-2.09-0.45
+l-1.39,1.62l-2.01,2.34l-1.19,1.38l0.41,1.77l2.48,10.63l-11.48,4.88l-5.93-9.16l-1.16-1.79l-2.13,0.16l-3.08,0.23l-1.82,0.14
+l-0.96,1.55l-5.76,9.27l-11.57-4.66l2.28-10.67l0.45-2.09l-1.62-1.39l-2.34-2.01l-1.38-1.19l-1.77,0.41L9.74,68.63L4.86,57.15
+l9.16-5.93l1.79-1.16l-0.16-2.13l-0.23-3.08l-0.14-1.82l-1.55-0.96l-9.27-5.76l4.66-11.57l10.67,2.28l2.09,0.45l1.39-1.62
+l2.01-2.34l1.19-1.38l-0.41-1.77L23.57,9.74l11.48-4.88l5.93,9.16l1.16,1.79l2.13-0.16l3.08-0.23l1.82-0.14l0.96-1.55L55.88,4.46
+ M54.42,0l-7.35,11.83l-3.08,0.23L36.42,0.37L19.39,7.62l3.17,13.56l-2.01,2.34L6.92,20.61L0,37.78l11.83,7.35l0.23,3.08
+L0.38,55.78l7.24,17.03l13.56-3.17l2.34,2.01l-2.91,13.62l17.16,6.92l7.35-11.83l3.08-0.23l7.57,11.69l17.03-7.24l-3.17-13.56
+l2.01-2.34l13.62,2.91l6.92-17.17l-11.83-7.35l-0.23-3.08l11.69-7.57l-7.24-17.03l-13.56,3.17l-2.34-2.01l2.91-13.62L54.42,0
+L54.42,0z"/></g></g></svg>
+
+
+  </div>
+  <div class="settings">
+      <ul>
+        <!-- <div class="font-size-buttons">
+          
+          <input class="font-button plus" type="button" value="+" onclick="checkFontSize(`body`, 1)">
+          <input class="font-button minus" type="button" value="-" onclick="checkFontSize(`body`, -1)">
+
+
+          <input class="font-button plus" type="button" value="+" onclick="increaseFontSize(`body`, 1)">
+          <input class="font-button minus" type="button" value="-" onclick="increaseFontSize(`body`, -1)">
+
+        </div> -->
+        
+            <div id="dark-mode-switch">
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+            </div>
+      </ul>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<header id="header">
+  <div class="title">
+    <div>
+      <!-- <span class="typcn typcn-heart-outline icon heading"></span> -->
+    
+    
+    </div>
+
+    <div class="smallsep heading"></div>
+    <h1 id="headline" class="heading">Thank You!</h1>
+    <h2 class="heading">Massage Sent</h2>
+
+    <div class="button-container">
+      <a class="button smoothscroll" href="/index.html"><span>Home</span></a>
+      <span class="baltringue"></span>
+    </div>
+
+    <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+  </div>
+    <a class="smoothscroll" href="#services">
+    <div class="scroll-down"></div>
+    </a>
+</header>    
+
+  
+
+
+ 
+  
+  <!-- Footer Section –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+  <footer>
+    <div>
+      <p>&reg; Mike Tilleman | <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
+    </div>
+
+<!--     <div id="dog-treat">
+      <button id="two" class="button">Buy my dog a treat</button>
+  </div>
+  
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal">
+          <h2>This is Mia</h2>
+          <p>
+            She's my 3 year old mini-aussie. If you make a donation it will go towards a treat just for her. Additionally, I'll send you a video of her doing a trick for you!
+          </p>
+          <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                  </svg>
+        </div>
+      </div> -->
+    </div>
+
+  </footer>
+
+
+  
+</body>
+
+
+<script src="script.js"></script>
+
+
+
+</html>
